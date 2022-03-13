@@ -39,9 +39,23 @@ arcade.draw_lrtb_rectangle_filled(0, 600, 300, 0, arcade.csscolor.DARK_OLIVE_GRE
 
 # Tronco de arbol
 # Centro de 100, 320
-# Width of 20
-# Height of 60
+# Ancho de 20
+# Alto de 60
 arcade.draw_rectangle_filled(100, 320, 20, 60, arcade.csscolor.SIENNA)
+
+# Copa del arbol
+# Centro de 100, 350
+arcade.draw_circle_filled(100, 350, 30, arcade.csscolor.DARK_GREEN)
+
+# Otro arbol con su copa en forma de eclipse
+arcade.draw_rectangle_filled(200, 320, 20, 60, arcade.csscolor.SIENNA)
+arcade.draw_ellipse_filled(200, 370, 60, 80, arcade.csscolor.DARK_GREEN)
+
+# Otro arbol con su copa en forma de arco
+# Arco centrado en (300, 340), ancho de 60 y altura de 100.
+# Ángulo inicial 0, ángulo final de 180.
+arcade.draw_rectangle_filled(300, 320, 20, 60, arcade.csscolor.SIENNA)
+arcade.draw_arc_filled(300, 340, 60, 100, arcade.csscolor.DARK_GREEN, 0, 180)
 
 # Esto delimita la función dibujar, indicando el fin del diseño
 arcade.finish_render()
